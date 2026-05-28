@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
     <meta charset="UTF-8" />
 
     <meta
@@ -23,20 +24,11 @@
         href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
         rel="stylesheet"
     />
+
 </head>
 
-<!-- Background Music -->
-<audio
-    id="bg-music"
-    loop
->
-    <source
-        src="music.mp3"
-        type="audio/mpeg"
-    />
-</audio>
-
 <body>
+
 
     <!-- =========================
          NAVBAR
@@ -57,22 +49,22 @@
         </div>
 
 
-        <!-- Menu -->
+        <!-- MENU -->
         <nav class="menu">
 
-            <a href="#">
+            <a href="#home">
                 Home
             </a>
 
-            <a href="#">
+            <a href="#vlogs">
                 Vlogs
             </a>
 
-            <a href="#">
+            <a href="#gallery">
                 Gallery
             </a>
 
-            <a href="#">
+            <a href="#about">
                 About
             </a>
 
@@ -81,12 +73,16 @@
     </header>
 
 
-    <!-- =========================
-         HERO SECTION
-    ========================== -->
-    <section class="hero">
 
-        <!-- Left -->
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <!-- LEFT -->
         <div class="hero-content">
 
             <div class="hero-badge">
@@ -94,45 +90,183 @@
                 <i class="ri-sparkling-2-line"></i>
 
                 <span>
-                    Daily Life • Travel • Study
+                    Daily Life • Study • Travel
                 </span>
 
             </div>
 
             <h1>
-                Capture Your <br />
-                Beautiful Moments
+                Create Your <br />
+                Digital Story
             </h1>
 
             <p>
-                Một không gian nhỏ để lưu giữ
-                những khoảnh khắc đời thường,
-                học tập, du lịch và hành trình
-                phát triển bản thân mỗi ngày.
+                Một website vlog tối giản hiện đại
+                để lưu giữ những khoảnh khắc học tập,
+                du lịch và cuộc sống mỗi ngày.
             </p>
 
             <button id="watch-btn">
 
                 <i class="ri-play-circle-line"></i>
 
-                Watch Vlog
+                Play Music
 
             </button>
 
         </div>
 
 
-        <!-- Right -->
+        <!-- RIGHT -->
         <div class="hero-image">
 
             <img
                 src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop"
-                alt="Vlog Image"
+                alt="Vlog"
             />
 
         </div>
 
     </section>
+
+
+
+    <!-- =========================
+         VLOGS SECTION
+    ========================== -->
+    <section
+        class="section"
+        id="vlogs"
+    >
+
+        <h2>
+            Latest Vlogs
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+                    alt=""
+                />
+
+                <h3>
+                    Morning Routine
+                </h3>
+
+                <p>
+                    Một ngày bắt đầu với trà,
+                    thiền và học ngoại ngữ.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                    alt=""
+                />
+
+                <h3>
+                    Study With Me
+                </h3>
+
+                <p>
+                    Không gian học tập nhẹ nhàng,
+                    tập trung và chill.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+                    alt=""
+                />
+
+                <h3>
+                    Travel Moments
+                </h3>
+
+                <p>
+                    Những chuyến đi nhỏ giúp
+                    tâm trí thư giãn hơn.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         GALLERY
+    ========================== -->
+    <section
+        class="section"
+        id="gallery"
+    >
+
+        <h2>
+            Photo Gallery
+        </h2>
+
+        <div class="gallery-grid">
+
+            <img
+                src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+            />
+
+            <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+            />
+
+            <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+            />
+
+            <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+                alt=""
+            />
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section
+        class="section about"
+        id="about"
+    >
+
+        <h2>
+            About This Website
+        </h2>
+
+        <p>
+            My First Vlog là một dự án HTML,
+            CSS và JavaScript đơn giản dành cho
+            người mới học Frontend Development.
+        </p>
+
+    </section>
+
 
 
     <!-- =========================
@@ -142,10 +276,26 @@
 
         <p>
             © 2026 My First Vlog —
-            Minimal Lifestyle Website
+            Minimal Creator Website
         </p>
 
     </footer>
+
+
+
+    <!-- MUSIC -->
+    <audio
+        id="bg-music"
+        loop
+    >
+
+        <source
+            src="music.mp3"
+            type="audio/mpeg"
+        />
+
+    </audio>
+
 
     <!-- JS -->
     <script src="script.js"></script>
