@@ -1,83 +1,75 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/* =========================
+   BODY
+========================= */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 
     min-height: 100vh;
+
+    background: #f8fafc;
+
+    color: #0f172a;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 80px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e2e8f0;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Logo Icon */
+.logo-icon {
+    width: 48px;
+    height: 48px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #0f172a,
-            #1e293b,
-            #334155
-        );
-
-    color: white;
-}
-
-.hero {
-    width: 100%;
-
-    padding: 40px;
-}
-
-.container {
-    max-width: 700px;
-
-    margin: auto;
-
-    text-align: center;
-
-    background:
-        rgba(255,255,255,0.08);
-
-    padding: 50px;
-
-    border-radius: 24px;
-
-    backdrop-filter: blur(12px);
-
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.25);
-}
-
-h1 {
-    font-size: 3rem;
-
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-
-    color: #cbd5e1;
-
-    margin-bottom: 30px;
-
-    line-height: 1.7;
-}
-
-button {
-    padding: 14px 24px;
-
-    border: none;
-
     border-radius: 14px;
-
-    cursor: pointer;
-
-    font-size: 16px;
-
-    font-weight: bold;
 
     background:
         linear-gradient(
@@ -88,12 +80,258 @@ button {
 
     color: white;
 
+    font-size: 24px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    text-decoration: none;
+
+    color: #475569;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   BADGE
+========================= */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background:
+        rgba(59,130,246,0.08);
+
+    color: #2563eb;
+
+    margin-bottom: 24px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+.hero h1 {
+    font-size:
+        clamp(3rem, 7vw, 5rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+.hero p {
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: #64748b;
+
+    margin-bottom: 34px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 24px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #8b5cf6
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
     transition: 0.3s;
 }
 
 button:hover {
 
-    transform: translateY(-2px);
+    transform:
+        translateY(-3px);
 
-    opacity: 0.95;
+    box-shadow:
+        0 14px 28px rgba(59,130,246,0.2);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+.hero-image img {
+    width: 100%;
+
+    border-radius: 28px;
+
+    object-fit: cover;
+
+    box-shadow:
+        0 20px 40px rgba(15,23,42,0.08);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    padding: 30px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    border-top:
+        1px solid #e2e8f0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 24px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .hero {
+        padding: 50px 24px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 16px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+button {
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 24px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            135deg,
+            #3b82f6,
+            #8b5cf6
+        );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 14px 28px rgba(59,130,246,0.2);
 }
